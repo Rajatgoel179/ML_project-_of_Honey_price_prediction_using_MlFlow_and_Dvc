@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Model Prediction</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('../static/Bee-Wallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: brown;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 0, 0.5);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            color: brown;
+        }
+
+        form {
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select, input {
+            width: calc(100% - 15px);
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: calc(100% - 20px);
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<form action="/predict" method="post">
+
+<h1> Prediction of Honey Production Price</h1>
+
+
+    <label for="state">State:</label>
+    <select id="state" name="state">
+        <option value="AK">Alaska</option>
+        <option value="AL">Alabama</option>
+        <option value="AR">Arkansas</option>
+        <option value="AZ">Arizona</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DC">District of Columbia</option>
+        <option value="DE">Delaware</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="HI">Hawaii</option>
+        <option value="IA">Iowa</option>
+        <option value="ID">Idaho</option>
+        <option value="IL">Illinois</option>
+        <option value="IN">Indiana</option>
+        <option value="KS">Kansas</option>
+        <option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option>
+        <option value="MA">Massachusetts</option>
+        <option value="MD">Maryland</option>
+        <option value="ME">Maine</option>
+        <option value="MI">Michigan</option>
+        <option value="MN">Minnesota</option>
+        <option value="MO">Missouri</option>
+        <option value="MS">Mississippi</option>
+        <option value="MT">Montana</option>
+        <option value="NC">North Carolina</option>
+        <option value="ND">North Dakota</option>
+        <option value="NE">Nebraska</option>
+        <option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option>
+        <option value="NM">New Mexico</option>
+        <option value="NV">Nevada</option>
+        <option value="NY">New York</option>
+        <option value="OH">Ohio</option>
+        <option value="OK">Oklahoma</option>
+        <option value="OR">Oregon</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="PR">Puerto Rico</option>
+        <option value="RI">Rhode Island</option>
+        <option value="SC">South Carolina</option>
+        <option value="SD">South Dakota</option>
+        <option value="TN">Tennessee</option>
+        <option value="TX">Texas</option>
+        <option value="UT">Utah</option>
+        <option value="VA">Virginia</option>
+        <option value="VT">Vermont</option>
+        <option value="WA">Washington</option>
+        <option value="WI">Wisconsin</option>
+        <option value="WV">West Virginia</option>
+        <option value="WY">Wyoming</option>
+        <!-- Add other state options here -->
+    </select>
+
+    <label for="numcol">Number of honey producing colonies:</label>
+    <input type="number" id="numcol" name="numcol" step="0.01" required>
+
+    <label for="yieldpercol">Yield per colony:</label>
+    <input type="number" id="yieldpercol" name="yieldpercol" required>
+
+    <label for="totalprod">Total production:</label>
+    <input type="number" id="totalprod" name="totalprod" step="0.01" required>
+
+    <label for="stocks">Stocks:</label>
+    <input type="number" id="stocks" name="stocks" step="0.01" required>
+
+    <label for="prodvalue">Value of production:</label>
+    <input type="number" id="prodvalue" name="prodvalue" step="0.01" required>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" required>
+
+    <button type="submit">Predict Price</button>
+
+</form>
+
+<br>
+<br>
+<br>
+<h1>{{prediction}}</h1>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/PUJA/OneDrive/Desktop/Machine_Learning_Project/ML_project-_using_MlFlow/mlruns/0/7ce1679d28aa4115bd3bd3488d23240f/artifacts
+end_time: 1704971347849
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7ce1679d28aa4115bd3bd3488d23240f
+run_name: casual-fawn-125
+run_uuid: 7ce1679d28aa4115bd3bd3488d23240f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704971325509
+status: 3
+tags: []
+user_id: PUJA

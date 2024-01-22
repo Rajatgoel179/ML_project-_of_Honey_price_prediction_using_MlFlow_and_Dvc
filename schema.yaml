@@ -1,0 +1,14 @@
+COLUMNS:
+ state : object 
+ numcol: float64
+ yieldpercol: int64  
+ totalprod:  float64
+ stocks: float64
+ priceperlb: float64
+ prodvalue : float64
+ year : int64  
+
+
+TARGET_COLUMN:
+  name: priceperlb
+  
