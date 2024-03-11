@@ -56,9 +56,9 @@ Now open up your local host 0.0.0.0:8080
 ### dagshub
 [dagshub](https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/SwapViSonu/ML_project-_using_MlFlow.mlflow \
-MLFLOW_TRACKING_USERNAME=SwapViSonu \
-MLFLOW_TRACKING_PASSWORD=329a1a74e9e584ddfa5e1f8df78db4518df00789 \
+MLFLOW_TRACKING_URI=https://dagshub.com/rajatgoel179/ML_project-_of_Honey_price_prediction_using_MlFlow_and_Dvc.mlflow
+MLFLOW_TRACKING_USERNAME=rajatgoel179
+MLFLOW_TRACKING_PASSWORD=afcc0cd2ead5d9b1ab9f24c4e7ef07e3abe30391
 python script.py
 
 
@@ -66,11 +66,11 @@ Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/SwapViSonu/ML_project-_using_MlFlow.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/rajatgoel179/ML_project-_of_Honey_price_prediction_using_MlFlow_and_Dvc.mlflow
 
-export MLFLOW_TRACKING_USERNAME=SwapViSonu
+export MLFLOW_TRACKING_USERNAME=rajatgoel179
 
-export MLFLOW_TRACKING_PASSWORD=329a1a74e9e584ddfa5e1f8df78db4518df00789
+export MLFLOW_TRACKING_PASSWORD=3afcc0cd2ead5d9b1ab9f24c4e7ef07e3abe30391
 
 ```
 
