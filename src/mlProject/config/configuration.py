@@ -106,7 +106,7 @@ class ConfigurationManager:
             all_params= params,
             metric_file_name = config.metric_file_name,
             target_column = schema.name,
-            mlflow_uri = "https://dagshub.com/SwapViSonu/ML_project-_using_MlFlow.mlflow",
+            mlflow_uri = "https://dagshub.com/rajatgoel179/ML_project-_of_Honey_price_prediction_using_MlFlow_and_Dvc.mlflow",
            
         )
 
